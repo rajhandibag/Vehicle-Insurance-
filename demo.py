@@ -5,6 +5,7 @@
 # logging.warning("This is a warning message.")
 # logging.error("This is an error message.")
 # logging.critical("This is a critical message.")
+#------------------------------------------------------------------
 
 # import sys
 # from src.logger import logging
@@ -15,3 +16,10 @@
 # except Exception as e:
 #     logging.info(e)
 #     raise MyException(e, sys) from e
+
+
+#-----------------------------------------------------------------------
+from src.pipeline.training_pipeline import TrainPipeline
+
+pipline = TrainPipeline()
+pipline.run_pipeline()
