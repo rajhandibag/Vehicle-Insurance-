@@ -1,4 +1,4 @@
-# from src.logger import logging
+from src.logger import logging
 
 # logging.debug("This is a debug message.")
 # logging.info("This is an info message.")
@@ -10,6 +10,8 @@
 # import sys
 # from src.logger import logging
 # from src.exception import MyException
+
+
 
 # try:
 #     a = 1+'Z'
