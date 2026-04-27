@@ -304,7 +304,9 @@ vehicle-insurance-mlops/
 
 <div align="center">
 
-⭐ **If this project was impressive, consider giving it a star!** ⭐
+✨ Thanks for checking out my project! 
+🚀 This project is part of my hands-on learning in Machine Learning and real-world deployment
+🚀 Open to feedback and improvements!
 
 </div>
-=======
+
