@@ -304,9 +304,10 @@ vehicle-insurance-mlops/
 
 <div align="center">
 
-✨ Thanks for checking out my project! 
-🚀 This project is part of my hands-on learning in Machine Learning and real-world deployment
-🚀 Open to feedback and improvements!
+✨ Thanks for checking out my project!  
+🚀 Built as part of my hands-on experience in Machine Learning and deployment pipelines  
+💡 Always open to feedback and improvements  
+⭐ Feel free to star the repo if you found it useful!
 
 </div>
 
