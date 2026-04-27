@@ -52,39 +52,39 @@ This project implements a **fully automated machine learning pipeline** for vehi
         ┌───────────────┐                   │
         │  MongoDB Atlas│──── Fetch Data ───▼
         └───────────────┘                   │
-                                ┌───────────────────┐
-                                │  Data Ingestion   │  → Raw train/test split
-                                └────────┬──────────┘
-                                         │
-                                ┌────────▼──────────┐
-                                │  Data Validation  │  → Schema & drift checks
-                                └────────┬──────────┘
-                                         │
-                                ┌────────▼──────────┐
-                                │ Data Transformation│  → Feature engineering
-                                └────────┬──────────┘
-                                         │
-                                ┌────────▼──────────┐
-                                │   Model Trainer   │  → Train & serialize model
-                                └────────┬──────────┘
-                                         │
-                                ┌────────▼──────────┐
-                                │  Model Evaluation │  → Compare vs. S3 champion
-                                └────────┬──────────┘
-                                         │
-                                ┌────────▼──────────┐
-                                │   Model Pusher    │  → Push to AWS S3 registry
-                                └───────────────────┘
+                                   ┌───────────────────┐
+                                   │  Data Ingestion   │  → Raw train/test split
+                                   └────────┬──────────┘
+                                            │
+                                   ┌────────▼──────────┐
+                                   │  Data Validation  │  → Schema & drift checks
+                                   └────────┬──────────┘
+                                            │
+                                   ┌────────▼──────────┐
+                                   │ Data Transformation│  → Feature engineering
+                                   └────────┬──────────┘
+                                            │
+                                   ┌────────▼──────────┐
+                                   │   Model Trainer   │  → Train & serialize model
+                                   └────────┬──────────┘
+                                            │
+                                   ┌────────▼──────────┐
+                                   │  Model Evaluation │  → Compare vs. S3 champion
+                                   └────────┬──────────┘
+                                            │
+                                   ┌────────▼──────────┐
+                                   │   Model Pusher    │  → Push to AWS S3 registry
+                                   └───────────────────┘
 
-        ┌─────────────────────────────────────────────┐
-        │             PREDICTION PIPELINE             │
-        └─────────────────────────────────────────────┘
-                User Request → Flask App → Pull Model from S3 → Predict → Return Result
-
-        ┌─────────────────────────────────────────────┐
-        │               CI/CD PIPELINE                │
-        └─────────────────────────────────────────────┘
-                Git Push → GitHub Actions → Docker Build → Push to ECR → Deploy on EC2
+                        ┌─────────────────────────────────────────────┐
+                        │             PREDICTION PIPELINE             │
+                        └─────────────────────────────────────────────┘
+                                User Request → Flask App → Pull Model from S3 → Predict → Return Result
+                
+                        ┌─────────────────────────────────────────────┐
+                        │               CI/CD PIPELINE                │
+                        └─────────────────────────────────────────────┘
+                                Git Push → GitHub Actions → Docker Build → Push to ECR → Deploy on EC2
 ```
 
 Each pipeline stage produces a typed **Artifact** object — making the entire workflow auditable, debuggable, and resumable.
@@ -120,7 +120,7 @@ Each pipeline stage produces a typed **Artifact** object — making the entire w
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/vehicle-insurance-mlops.git
+git clone https://github.com/rajhandibag/vehicle-insurance-mlops.git
 cd vehicle-insurance-mlops
 ```
 
@@ -171,7 +171,7 @@ python demo.py
 python app.py
 ```
 
-App will be available at `http://localhost:5080`
+App will be available at `http://localhost:5000`
 
 ---
 
@@ -237,7 +237,7 @@ The deployed application exposes two entry points:
 - **`/`** — Web UI for submitting insurance data and receiving predictions
 - **`/training`** — Trigger a fresh model training run via browser or API call
 
-> 🔗 **Live App:** `http://<EC2-Public-IP>:5080` *(deploy your own instance using the setup guide above)*
+> 🔗 **Live App:** `http://54.87.12.125:8080`
 
 ---
 
@@ -295,13 +295,7 @@ vehicle-insurance-mlops/
 
 ---
 
-## 📬 Contact / Connect
 
-Built by **[Your Name]**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/your-username)
-[![Email](https://img.shields.io/badge/Email-Reach%20Out-red?style=flat&logo=gmail)](mailto:your@email.com)
 
 > *Open to MLOps, Data Engineering, and ML Platform roles. Feel free to reach out!*
 
