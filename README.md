@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🚗 Vehicle Insurance MLOps Pipeline
 
 <div align="center">
