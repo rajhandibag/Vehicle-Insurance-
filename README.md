@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚗 Vehicle Insurance MLOps Pipeline
 
 <div align="center">
@@ -303,6 +304,7 @@ vehicle-insurance-mlops/
 
 <div align="center">
 
-⭐ **If this project was helpful or impressive, consider giving it a star!** ⭐
+⭐ **If this project was impressive, consider giving it a star!** ⭐
 
 </div>
+=======
